@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maheshwari Taxi Service - Tour Packages</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html" class="active">Tour Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="packages" data-aos="fade-up">
+    <h1>Our Tour Packages</h1>
+    <div class="packages">
+      <div class="package">
+        <img src="pac1.png" alt="Goa Beaches Tour" loading="lazy" />
+        <h3>Goa Beaches Tour</h3>
+        <p>Explore Goa’s famous beaches with our comfortable taxi rides.</p>
+      </div>
+      <div class="package">
+        <img src="pac2.png" alt="Heritage & Culture" loading="lazy" />
+        <h3>Heritage & Culture</h3>
+        <p>Discover Goa’s rich culture and historical sites effortlessly.</p>
+      </div>
+      <div class="package">
+        <img src="pac3.png" alt="Adventure Tour" loading="lazy" />
+        <h3>Adventure Tour</h3>
+        <p>Thrilling rides to adventure spots across Goa.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Maheshwari Taxi Service. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Add hamburger for mobile nav
+    const hamburger = document.createElement('div');
+    hamburger.classList.add('hamburger');
+    hamburger.innerHTML = '&#9776;';
+    document.querySelector('nav').appendChild(hamburger);
+
+    hamburger.addEventListener('click', () => {
+      document.querySelector('ul.nav-menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
