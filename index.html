@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maheshwari Taxi Service</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Maheshwari Taxi Logo" class="logo" />
+    </div>
+    <div class="nav-right">
+      <ul class="nav-menu">
+        <li><a href="#booking">Book Taxi</a></li>
+        <li><a href="#packages">Tour Packages</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="contact-info">
+        <p>Contact: +91 8999239883</p>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="booking" data-aos="fade-right">
+    <div class="hero-text">
+      <h1>Maheshwari Taxi Service</h1>
+      <p>Reliable and Comfortable Taxi Service in Goa.</p>
+    </div>
+    <div class="form-box">
+      <form action="https://formspree.io/f/meokqppy" method="POST">
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required />
+        <input type="text" id="pickup" name="pickup" placeholder="Pickup Location" required />
+        <input type="text" id="drop" name="drop" placeholder="Drop Location" required />
+        <input type="date" id="date" name="date" required />
+        <input type="time" id="time" name="time" required />
+        <select id="vehicle" name="vehicle" required>
+          <option value="">Select Vehicle</option>
+          <option value="Sedan">Sedan</option>
+          <option value="SUV">SUV</option>
+          <option value="Tempo Traveller">Tempo Traveller</option>
+        </select>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="packages" id="packages" data-aos="fade-up">
+    <h2>Tour Packages</h2>
+    <div class="packages">
+      <div class="package">
+        <img src="pac1.png" alt="Goa Beaches Tour" loading="lazy" />
+        <h3>Goa Beaches Tour</h3>
+        <p>Explore Goa’s famous beaches with our comfortable taxi rides.</p>
+      </div>
+      <div class="package">
+        <img src="pac2.png" alt="Heritage & Culture" loading="lazy" />
+        <h3>Heritage & Culture</h3>
+        <p>Discover Goa’s rich culture and historical sites effortlessly.</p>
+      </div>
+      <div class="package">
+        <img src="pac3.png" alt="Adventure Tour" loading="lazy" />
+        <h3>Adventure Tour</h3>
+        <p>Thrilling rides to adventure spots across Goa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cars" id="cars" data-aos="fade-up">
+    <h2>Our Cars</h2>
+    <div class="cars">
+      <div class="car">
+        <img src="img1.png" alt="Sedan Car" loading="lazy" />
+        <h3>Sedan</h3>
+      </div>
+      <div class="car">
+        <img src="img2.png" alt="SUV Car" loading="lazy" />
+        <h3>SUV</h3>
+      </div>
+      <div class="car">
+        <img src="img3.png" alt="Tempo Traveller" loading="lazy" />
+        <h3>Tempo Traveller</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="sightseeing" id="sightseeing" data-aos="fade-up">
+    <h2>Popular Spots</h2>
+    <div class="sightseeing">
+      <div class="spot">
+        <img src="spot1.png" alt="Shree Mangueshi Temple" loading="lazy" />
+        <h3>Shree Mangueshi Temple</h3>
+      </div>
+      <div class="spot">
+        <img src="spot2.png" alt="Palolem Beach" loading="lazy" />
+        <h3>Palolem Beach</h3>
+      </div>
+      <div class="spot">
+        <img src="spot3.png" alt="Fort Aguada" loading="lazy" />
+        <h3>Fort Aguada</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback" data-aos="fade-up">
+    <h2>Feedback</h2>
+    <form action="https://formspree.io/f/meokqppy" method="POST" class="feedback-form">
+      <input type="text" id="feedbackName" name="name" placeholder="Your Name" required />
+      <input type="email" id="feedbackEmail" name="email" placeholder="Your Email" required />
+      <textarea id="feedbackMessage" name="message" placeholder="Your Feedback" rows="5" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Maheshwari Taxi Service. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" title="Back to Top">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
